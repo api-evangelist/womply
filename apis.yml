@@ -1,7 +1,25 @@
 aid: womply
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/womply.png
 name: Womply
-description: Womply is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Womply (legally Oto Analytics, Inc.) was a small-business software company founded in 2011
+  by Toby Scammell that spent a decade building marketing, reputation, and payments software for roughly
+  500,000 Main Street businesses, and during the Paycheck Protection Program built the application-intake
+  and identity-screening technology its lender partners used to process loans for sole proprietors and the
+  smallest businesses. The company sold in 2021 for approximately $1.1 billion and is no longer operating;
+  womply.com today is a primary-source documentary record of Womply's PPP role, sourced to court rulings,
+  the JAMS arbitration award, SBA data, and the company's own production files. No public developer/API
+  surface remains — this profile captures the company's identity and the record site's published artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/womply/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +27,19 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Small Business
+- Fintech
+- Payments
+- Lending
+- PPP
+- Software
+- Historical Record
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: LLMsTxt
+  url: llms/womply-llms.txt
+- type: DomainSecurity
+  url: security/womply-domain-security.yml
 - type: Website
   url: https://womply.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
